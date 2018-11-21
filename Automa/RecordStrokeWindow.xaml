@@ -1,0 +1,13 @@
+﻿<Window x:Class="Automa.RecordStrokeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Automa"
+        mc:Ignorable="d"
+        Title="記録中" Height="99.254" Width="483.094">
+    <Grid>
+        <Button Content="記録終了" Margin="0,13,10,0" VerticalAlignment="Top" Click="Button_Click" HorizontalAlignment="Right" Width="75"/>
+        <Label x:Name="label" Content="Code" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

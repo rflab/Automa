@@ -1,0 +1,16 @@
+﻿<Window x:Class="Automa.ConsoleWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Automa"
+        mc:Ignorable="d"
+        Title="OutputConsole" Height="400" Width="600"
+        Foreground="White" FontFamily="monaco" FontSize="10pt"
+        SizeChanged="Window_SizeChanged">
+    <ScrollViewer Opacity=".7" Background="Black" Padding="2" HorizontalScrollBarVisibility="Auto">
+        <StackPanel x:Name="lines">
+            <TextBlock/>
+        </StackPanel>
+    </ScrollViewer>
+</Window>

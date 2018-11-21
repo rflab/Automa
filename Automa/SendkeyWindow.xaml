@@ -1,0 +1,17 @@
+﻿<Window x:Class="Automa.SendKeyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Automa"
+        mc:Ignorable="d"
+        Title="キー入力" Height="108.686" Width="263.136">
+    <Grid>
+        <CheckBox x:Name="ctrl" Content="Ctrl" HorizontalAlignment="Left" Margin="10,17,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="alt" Content="Alt" HorizontalAlignment="Left" Margin="54,17,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.24,-0.204"/>
+        <CheckBox x:Name="shift" Content="Shift" HorizontalAlignment="Left" Margin="94,17,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboBox" ItemsSource="{Binding Path=ComboList}" Margin="143,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="92"/>
+        <Button Content="OK" Margin="160,37,0,0" Click="Button_Click" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left" Width="75"/>
+
+    </Grid>
+</Window>
